@@ -19,7 +19,7 @@ spec:
     kustomize:
       images:
         - >-
-          KUBEDAY_IMAGE=ttl.sh/buildpacks-example-mcp/taxi-app:6h
+          KUBEDAY_IMAGE=quay.io/rh-ee-asatya/buildpacks-mcp-test:1.0
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kubeday-integ
