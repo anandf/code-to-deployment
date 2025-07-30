@@ -65,7 +65,7 @@ helm install policy-controller -n cosign-system sigstore/policy-controller --dev
 # Wait for the policy controller to be available
 ```
 kubectl -n cosign-system wait --for=condition=Available deployment/policy-controller-webhook && \
-kubectl -n cosign-system wait --for=condition=Available deployment/policy-controller-webhook
+kubectl -n cosign-system wait --for=condition=Available deployment/policy-controller-policy-webhook
 ```
 
 # Enable guestbook namespace in image validation and policy enforcement
