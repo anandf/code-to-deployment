@@ -14,7 +14,7 @@ spec:
         app: kubeday-app
     spec:
       containers:
-      - image: KUBEDAY_IMAGE
+      - image: ttl.sh/buildpacks-mcp-example:24h
         name: kubeday-app
         ports:
         - containerPort: 9999
